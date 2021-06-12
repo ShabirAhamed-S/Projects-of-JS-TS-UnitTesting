@@ -1,0 +1,28 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha || true",
+    "test1": "jest || true",
+    "coverage": "nyc npm run test",
+    "coverage1": "nyc --reporter=html npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jasmine-node": "^3.0.0",
+    "jest": "^26.6.3",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4",
+    "sinon-chai": "^3.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "coverage": "^0.4.1"
+  }
+}

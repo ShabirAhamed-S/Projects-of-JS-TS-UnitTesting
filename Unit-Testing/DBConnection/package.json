@@ -1,0 +1,29 @@
+{
+  "name": "coding-with-shabir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./app/index.js",
+    "test": "mocha --recursive || true",
+    "coverage": "nyc npm run test",
+    "coverage1": "nyc --reporter=html npm run test"
+  },
+  "author": "shabirahamed",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "dependencies": "0.0.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3",
+    "nyc": "^15.1.0"
+  }
+}

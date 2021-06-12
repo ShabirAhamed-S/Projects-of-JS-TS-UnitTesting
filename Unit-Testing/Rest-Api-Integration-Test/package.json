@@ -1,0 +1,37 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "./test/*.test.js",
+    "integration": "./integration/*.integrationtest.js"
+  },
+  "scripts": {
+    "integration" :  "mocha || true",
+    "start"       :  "node index.js",
+    "coverage"    :  "nyc npm run test", 
+    "test"        :  "cross-env NODE_ENV=test mocha || true",
+    "coverage1"   :  "nyc --reporter=html npm run test",
+    "coverage2"   :  "nyc cover _mocha index.test.js -x *.test.js",
+    "test1"       :  "cross-env NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"src/test/**/*.spec.ts\"",
+    "start1"      :  "cross-env NODE_PATH=./dist node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.21",
+    "restify": "^4.3.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "coverage": "^0.4.1",
+    "mocha": "^3.5.3",
+    "nyc": "^15.1.0",
+    "supertest": "^3.4.2"
+  }
+}

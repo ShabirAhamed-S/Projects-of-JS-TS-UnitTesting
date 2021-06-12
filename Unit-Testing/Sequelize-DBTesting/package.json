@@ -1,0 +1,29 @@
+{
+  "name": "Sequelize-DBTesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha ./src/user/*.test.js --recursive --exist || true",
+    "start": "nodemon ./src/app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "faker": "^5.5.3",
+    "mocha": "^8.3.2",
+    "sinon": "^10.0.0"
+  }
+}
